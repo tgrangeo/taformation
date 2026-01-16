@@ -22,7 +22,7 @@ export function TrainerSection() {
             <div className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                 <img
-                  src="/thomas_portrait.png"
+                  src="thomas_portrait.png"
                   alt="Thierry Arnaud - Formateur SST"
                   className="w-full h-full object-cover"
                 />

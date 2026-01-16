@@ -10,7 +10,7 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('/professional-first-aid-training-session-in-modern-.jpg')",
+            "url('professional-first-aid-training-session-in-modern-.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/80" />
@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="flex items-center justify-center gap-2 text-5xl md:text-7xl lg:text-8xl font-bold mb-2 tracking-tight text-background">
           <Image
-            src="/flame.png"
+            src="flame.png"
             alt="Logo T.A Formation"
             width={64}
             height={64}

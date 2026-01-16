@@ -7,28 +7,28 @@ const reviews = [
     company: "BTP Solutions",
     rating: 5,
     text: "Formation SST très complète et enrichissante. Le formateur sait rendre les gestes de secours accessibles à tous. Je recommande vivement !",
-    avatar: "/professional-woman-portrait.png",
+    avatar: "professional-woman-portrait.png",
   },
   {
     name: "Jean-Pierre Martin",
     company: "Industrie Moderne",
     rating: 5,
     text: "Excellente pédagogie, cas pratiques très réalistes. Toute notre équipe est maintenant formée grâce à T.A Formation.",
-    avatar: "/professional-man-portrait.png",
+    avatar: "professional-man-portrait.png",
   },
   {
     name: "Sophie Bernard",
     company: "Restaurant Le Gourmet",
     rating: 5,
     text: "Un formateur passionné qui sait transmettre les bons réflexes. La formation s'est déroulée dans nos locaux, très pratique !",
-    avatar: "/professional-woman-chef.png",
+    avatar: "professional-woman-chef.png",
   },
   {
     name: "Thomas Leroy",
     company: "Logistique Express",
     rating: 5,
     text: "Formation de qualité, parfaitement adaptée aux risques de notre secteur. Un vrai plus pour la sécurité de nos collaborateurs.",
-    avatar: "/professional-man-warehouse-worker-portrait.jpg",
+    avatar: "professional-man-warehouse-worker-portrait.jpg",
   },
 ]
 
@@ -59,7 +59,7 @@ export function ReviewsSection() {
                 <p className="text-foreground mb-6 leading-relaxed">{review.text}</p>
                 <div className="flex items-center gap-4">
                   <img
-                    src={review.avatar || "/placeholder.svg"}
+                    src={review.avatar || "placeholder.svg"}
                     alt={review.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />

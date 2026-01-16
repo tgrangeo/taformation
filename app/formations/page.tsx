@@ -14,7 +14,7 @@ const formations = [
     duration: "14 heures (2 jours)",
     participants: "4 à 10 personnes",
     certification: "Certificat SST valable 24 mois",
-    image: "/first-aid-cpr-training-session-with-mannequin.jpg",
+    image: "first-aid-cpr-training-session-with-mannequin.jpg",
     highlights: [
       "Protéger et prévenir les risques",
       "Examiner la victime",
@@ -31,7 +31,7 @@ const formations = [
     duration: "7 heures (1 jour)",
     participants: "4 à 10 personnes",
     certification: "Renouvellement certificat SST",
-    image: "/professional-first-aid-refresher-course-team-train.jpg",
+    image: "professional-first-aid-refresher-course-team-train.jpg",
     highlights: [
       "Révision des gestes de premiers secours",
       "Actualisation selon les dernières recommandations",
@@ -46,7 +46,7 @@ const formations = [
     duration: "3 à 4 heures",
     participants: "Jusqu'à 15 personnes",
     certification: "Attestation de formation",
-    image: "/workplace-first-aid-awareness-training-group-sessi.jpg",
+    image: "workplace-first-aid-awareness-training-group-sessi.jpg",
     highlights: [
       "Les gestes qui sauvent",
       "Alerter les secours efficacement",
@@ -61,7 +61,7 @@ const formations = [
     duration: "3 à 4 heures",
     participants: "Jusqu'à 12 personnes",
     certification: "Attestation de formation",
-    image: "/fire-safety-training-workplace-fire-extinguisher-d.jpg",
+    image: "fire-safety-training-workplace-fire-extinguisher-d.jpg",
     highlights: [
       "Les classes de feux",
       "Manipulation des extincteurs",
