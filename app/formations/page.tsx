@@ -24,7 +24,7 @@ const formations = [
       "Être capable de décrire les procédures et consignes de sécurité de l’entreprise.",
       "Être capable d’identifier les étapes d’intervention pour agir sur un départ de feu.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_EPI.pdf"
+    pdf: "pdf/programme_formation_EPI.pdf",
   },
   {
     title: "Exercice d’évacuation incendie",
@@ -39,7 +39,7 @@ const formations = [
       "Identifier les dysfonctionnements lors de l’exercice.",
       "Sensibiliser le personnel aux gestes réflexes incendie.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_exercice_d'e%CC%81vacuation.pdf"
+    pdf: "pdf/programme_formation_exercice_d'e%CC%81vacuation.pdf",
   },
   {
     title: "Exploitation du Système de Sécurité Incendie (SSI)",
@@ -54,7 +54,7 @@ const formations = [
       "Alerter, accueillir et guider les secours.",
       "Mettre en œuvre le SSI lors de mises en situation réelles.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_exploitation_SSI.pdf"
+    pdf: "pdf/programme_formation_exploitation_SSI.pdf",
   },
   {
     title: "Gestes qui sauvent (GQS)",
@@ -69,7 +69,7 @@ const formations = [
       "Savoir réagir rapidement et efficacement pour éviter l’aggravation de l’état d’une victime.",
       "Formation interactive avec démonstrations pratiques sur mannequins.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_GQS.pdf"
+    pdf: "pdf/programme_formation_GQS.pdf",
   },
   {
     title:
@@ -86,7 +86,7 @@ const formations = [
       "Évaluation certificative MAC SST selon les critères INRS.",
       "Formation interactive avec supports pédagogiques et exercices pratiques.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_MAC_SST.pdf"
+    pdf: "pdf/programme_formation_MAC_SST.pdf",
   },
   {
     title: "Prévention des risques",
@@ -102,7 +102,7 @@ const formations = [
       "Visite pratique du site pour appliquer les connaissances acquises.",
       "Formation interactive avec vidéos, exposés et partage d'expérience.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_pre%CC%81vention_des_risques.pdf"
+    pdf: "pdf/programme_formation_pre%CC%81vention_des_risques.pdf",
   },
   {
     title: "Savoir porter secours (SPS)",
@@ -118,7 +118,7 @@ const formations = [
       "Évaluation par des mises en situation adaptées à l'entreprise.",
       "Formation interactive avec démonstrations et partage d'expérience.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_SPS.pdf"
+    pdf: "pdf/programme_formation_SPS.pdf",
   },
   {
     title: "Sauveteur Secouriste du Travail (SST)",
@@ -134,7 +134,7 @@ const formations = [
       "Épreuves certificatives selon les critères INRS pour valider les compétences acquises.",
       "Formation interactive avec vidéos, supports pédagogiques et exercices pratiques sur mannequins.",
     ],
-    pdf: "https://github.com/tgrangeo/taformation/blob/master/public/pdf/programme_formation_SST.pdf"
+    pdf: "pdf/programme_formation_SST.pdf",
   },
 ];
 
@@ -142,7 +142,6 @@ export default function FormationsPage() {
   return (
     <main>
       <Header />
-
       <section className="pt-32 pb-16 bg-muted">
         <div className="container mx-auto px-4">
           <Button variant="ghost" asChild className="mb-8">
@@ -225,10 +224,16 @@ export default function FormationsPage() {
                 </CardContent>
                 <CardFooter className="pt-0">
                   <Button asChild className="w-full">
-                    <a href="/#contact" className="flex items-center gap-2">
-                      <Download className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                      Télécharger le détail
-                    </a>
+                    <Button asChild className="w-full">
+                      <a
+                        href={formation.pdf}
+                        className="flex items-center gap-2"
+                        download
+                      >
+                        <Download className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                        Télécharger le détail
+                      </a>
+                    </Button>
                   </Button>
                 </CardFooter>
               </Card>
