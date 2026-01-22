@@ -54,7 +54,7 @@ export function ContactSection() {
           <p className="text-sm font-medium text-primary mb-4 uppercase tracking-wider">Contact</p>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Parlons de votre projet</h2>
           <p className="text-lg text-muted-foreground">
-            Vous souhaitez former vos équipes ? Contactez-nous pour un devis personnalisé
+            Vous souhaitez former vos équipes ? Contactez-nous pour une formation personnalisée
           </p>
         </div>
 
