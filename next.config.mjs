@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const basePath = process.env.PAGES_BASE_PATH || "/taformation";
+const basePath = process.env.PAGES_BASE_PATH;
 
 const nextConfig = {
   typescript: {
