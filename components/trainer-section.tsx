@@ -6,12 +6,12 @@ import {
   Candy,
 } from "lucide-react";
 
-const credentials = [
-  { icon: Candy, label: "A des bonbons dans son camion" },
-  { icon: BookHeart, label: "Pretre" },
-  { icon: School, label: "Attend devant les ecoles" },
-  { icon: TriangleAlert, label: "N'allez pas dans sa cave" },
-];
+// const credentials = [
+//   { icon: Candy, label: "A des bonbons dans son camion" },
+//   { icon: BookHeart, label: "Pretre" },
+//   { icon: School, label: "Attend devant les ecoles" },
+//   { icon: TriangleAlert, label: "N'allez pas dans sa cave" },
+// ];
 
 export function TrainerSection() {
   return (
@@ -65,7 +65,7 @@ export function TrainerSection() {
                 « Prévenir, former, protéger »
               </p>
 
-              <div className="grid grid-cols-2 gap-4">
+              {/* <div className="grid grid-cols-2 gap-4">
                 {credentials.map((cred) => (
                   <div
                     key={cred.label}
@@ -77,7 +77,7 @@ export function TrainerSection() {
                     </span>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
