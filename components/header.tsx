@@ -67,7 +67,7 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent>
-            <nav className="flex flex-col gap-4 mt-8">
+            <nav className="flex flex-col mx-auto gap-4 mt-8">
               <Link href="/" className="text-lg font-medium">
                 Accueil
               </Link>

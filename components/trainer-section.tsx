@@ -27,7 +27,7 @@ export function TrainerSection() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-6  bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
                 <p className="text-3xl font-bold">10+</p>
                 <p className="text-sm">années d&apos;expérience</p>
               </div>
