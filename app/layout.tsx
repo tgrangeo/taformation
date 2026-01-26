@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   title: "T.A Formation - Formateur SST Indépendant",
   description:
     "Formation Sauveteur Secouriste du Travail (SST) par un formateur certifié. Protégez vos équipes avec des formations de qualité.",
-  generator: "v0.app",
 };
 
 export default function RootLayout({

@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const contactInfo = [
   {
@@ -23,13 +24,7 @@ const contactInfo = [
     value: "contact@taformation.fr",
     href: "mailto:contact@taformation.fr",
   },
-  {
-    icon: MapPin,
-    label: "Zone d'intervention",
-    value: "Île-de-France et régions limitrophes",
-    href: null,
-  },
-]
+];
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -38,23 +33,37 @@ export function ContactSection() {
     company: "",
     phone: "",
     message: "",
-  })
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
-    alert("Merci pour votre message ! Nous vous recontacterons rapidement.")
-    setFormData({ name: "", email: "", company: "", phone: "", message: "" })
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+    console.log({
+      PUBLIC_KEY,
+      SERVICE_ID,
+      TEMPLATE_ID,
+    });
+    console.log("Form submitted:", formData);
+    await emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY);
+    alert("Merci pour votre message ! Nous vous recontacterons rapidement.");
+    setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+  };
 
   return (
     <section id="contact" className="py-24 bg-muted">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <p className="text-sm font-medium text-primary mb-4 uppercase tracking-wider">Contact</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Parlons de votre projet</h2>
+          <p className="text-sm font-medium text-primary mb-4 uppercase tracking-wider">
+            Contact
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            Parlons de votre projet
+          </h2>
           <p className="text-lg text-muted-foreground">
-            Vous souhaitez former vos équipes ? Contactez-nous pour une formation personnalisée
+            Vous souhaitez former vos équipes ? Contactez-nous pour une
+            formation personnalisée
           </p>
         </div>
 
@@ -67,13 +76,20 @@ export function ContactSection() {
                     <info.icon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">{info.label}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {info.label}
+                    </p>
                     {info.href ? (
-                      <a href={info.href} className="font-medium text-foreground hover:text-primary transition-colors">
+                      <a
+                        href={info.href}
+                        className="font-medium text-foreground hover:text-primary transition-colors"
+                      >
                         {info.value}
                       </a>
                     ) : (
-                      <p className="font-medium text-foreground">{info.value}</p>
+                      <p className="font-medium text-foreground">
+                        {info.value}
+                      </p>
                     )}
                   </div>
                 </CardContent>
@@ -90,7 +106,9 @@ export function ContactSection() {
                     <Input
                       id="name"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       placeholder="Jean Dupont"
                       required
                     />
@@ -101,7 +119,9 @@ export function ContactSection() {
                       id="email"
                       type="email"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       placeholder="jean@entreprise.fr"
                       required
                     />
@@ -111,7 +131,9 @@ export function ContactSection() {
                     <Input
                       id="company"
                       value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, company: e.target.value })
+                      }
                       placeholder="Nom de votre entreprise"
                     />
                   </div>
@@ -121,7 +143,9 @@ export function ContactSection() {
                       id="phone"
                       type="tel"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       placeholder="06 12 34 56 78"
                     />
                   </div>
@@ -131,7 +155,9 @@ export function ContactSection() {
                   <Textarea
                     id="message"
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     placeholder="Décrivez votre besoin en formation..."
                     rows={5}
                     required
@@ -147,5 +173,5 @@ export function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
