@@ -17,7 +17,7 @@ const formations = [
       "Formation à la prévention incendie pour reconnaître les extincteurs, appliquer les consignes de sécurité et intervenir efficacement sur un départ de feu.",
     duration: "3 heures",
     participants: "jusqu'à 10 personnes",
-    image: "first-aid-cpr-training-session-with-mannequin.jpg",
+    image: "extincteur.png",
     highlights: [
       "Être capable d’identifier les différents extincteurs.",
       "Être capable de mobiliser les moyens de secours liés à l’entreprise.",
@@ -32,7 +32,7 @@ const formations = [
       "Formation pratique visant à intervenir efficacement sur un départ de feu, participer à l’évacuation du public et adopter les bons réflexes en situation d’urgence.",
     duration: "2 heures",
     participants: "nombre défini avec l’entreprise",
-    image: "fire-safety-training-workplace-fire-extinguisher-d.jpg",
+    image: "banner_evac.png",
     highlights: [
       "Intervenir efficacement sur un départ de feu.",
       "Participer à l’évacuation du public en sécurité.",
@@ -47,7 +47,7 @@ const formations = [
       "Formation permettant d’exploiter et de réarmer le SSI, de participer activement à l’évacuation et d’alerter, accueillir et guider les secours.",
     duration: "3 heures",
     participants: "de 4 à 10 personnes",
-    image: "professional-first-aid-refresher-course-team-train.jpg",
+    image: "local_ssi.png",
     highlights: [
       "Exploiter et réarmer le Système de Sécurité Incendie (SSI).",
       "Devenir acteur de l’évacuation au sein de l’entreprise.",
@@ -57,7 +57,7 @@ const formations = [
     pdf: "pdf/programme_formation_exploitation_SSI.pdf",
   },
   {
-    title: "Gestes qui sauvent (GQS)",
+    title: "Initiation aux gestes de secours",
     description:
       "Formation pratique permettant d’assurer une protection pour soi et pour les autres, de transmettre un message d’alerte, et de maîtriser les techniques de secourisme pour éviter l’aggravation de l’état de santé d’une victime.",
     duration: "2 heures",
@@ -69,7 +69,7 @@ const formations = [
       "Savoir réagir rapidement et efficacement pour éviter l’aggravation de l’état d’une victime.",
       "Formation interactive avec démonstrations pratiques sur mannequins.",
     ],
-    pdf: "pdf/programme_formation_GQS.pdf",
+    pdf: "pdf/Programme_Formation_Initiation_Gestes_Secours.pdf",
   },
   {
     title:
@@ -78,7 +78,7 @@ const formations = [
       "Formation permettant d’intervenir efficacement face à une situation d’accident du travail, tout en actualisant ses compétences en prévention des risques professionnels et en gestes de secours.",
     duration: "7 heures",
     participants: "4 à 10 personnes",
-    image: "first-aid-cpr-training-session-with-mannequin.jpg",
+    image: "banner_sst.png",
     highlights: [
       "Actualisation des compétences en prévention des risques professionnels.",
       "Retour d’expérience et partage des bonnes pratiques entre SST.",
@@ -94,7 +94,7 @@ const formations = [
       "Formation visant à identifier les risques spécifiques à une entreprise, à effectuer une remontée d'informations de qualité et à utiliser le Mécanisme d'Apparition du Dommage (MAD) pour renforcer la sécurité au travail.",
     duration: "2 heures",
     participants: "4 à 10 personnes",
-    image: "first-aid-cpr-training-session-with-mannequin.jpg",
+    image: "logo_prevent.png",
     highlights: [
       "Identifier les risques liés à l'activité de l'entreprise.",
       "Apprendre à rédiger une remontée d'informations efficace.",
@@ -126,7 +126,7 @@ const formations = [
       "Formation certifiante permettant d’intervenir efficacement en cas d’accident du travail, tout en intégrant la prévention des risques professionnels. Les participants apprennent à protéger, examiner, alerter et réaliser les gestes de premiers secours adaptés.",
     duration: "14 heures (2 journées)",
     participants: "4 à 10 personnes",
-    image: "first-aid-cpr-training-session-with-mannequin.jpg",
+    image: "banner_sst.png",
     highlights: [
       "Maîtriser le rôle du SST et le cadre juridique lié à la prévention des risques professionnels.",
       "Apprendre à protéger, examiner une victime et alerter les secours.",

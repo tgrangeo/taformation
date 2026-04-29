@@ -15,14 +15,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Téléphone",
-    value: "06 12 34 56 78",
-    href: "tel:+33612345678",
+    value: " 06.15.23.05.36",
+    href: "tel:+330615230536",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "contact@taformation.fr",
-    href: "mailto:contact@taformation.fr",
+    value: " thomasazuaga.formation@gmail.com",
+    href: "mailto: thomasazuaga.formation@gmail.com",
   },
 ];
 
@@ -67,7 +67,7 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="max-w-56xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-1 space-y-4">
             {contactInfo.map((info) => (
               <Card key={info.label} className="bg-card border-border">

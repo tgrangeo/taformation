@@ -38,7 +38,7 @@ export function Header() {
             href="#reviews"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            Avis
+            Note Générale
           </Link>
           <Link
             href="#trainer"
@@ -75,7 +75,7 @@ export function Header() {
                 À propos
               </Link>
               <Link href="#reviews" className="text-lg font-medium">
-                Avis
+                Note Générale
               </Link>
               <Link href="#trainer" className="text-lg font-medium">
                 Formateur
