@@ -61,7 +61,7 @@ const formations = [
     description:
       "Formation pratique permettant d’assurer une protection pour soi et pour les autres, de transmettre un message d’alerte, et de maîtriser les techniques de secourisme pour éviter l’aggravation de l’état de santé d’une victime.",
     duration: "2 heures",
-    participants: "4 à 15 personnes",
+    participants: "4 à 10 personnes",
     image: "professional-first-aid-refresher-course-team-train.jpg",
     highlights: [
       "Apprendre à protéger et alerter en cas d’urgence.",
