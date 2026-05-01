@@ -46,7 +46,7 @@ export function Footer() {
             <div className="space-y-2 text-sm text-background/70">
               <p>06.15.23.05.36</p>
               <p>thomasazuaga.formation@gmail.com</p>
-              <p>Île-de-France</p>
+              <p>France</p>
             </div>
           </div>
         </div>
